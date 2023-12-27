@@ -23,7 +23,7 @@ Safety modes optionally support `controls_allowed`, which allows or blocks a sub
 
 ## Code Rigor
 
-The panda firmware is written for its use in conjuction with [openpilot](https://github.com/commaai/openpilot). The panda firmware, through its safety model, provides and enforces the
+The panda firmware is written for its use in conjunction with [openpilot](https://github.com/commaai/openpilot). The panda firmware, through its safety model, provides and enforces the
 [openpilot safety](https://github.com/commaai/openpilot/blob/master/docs/SAFETY.md). Due to its critical function, it's important that the application code rigor within the `board` folder is held to high standards.
 
 These are the [CI regression tests](https://github.com/commaai/panda/actions) we have in place:
@@ -33,7 +33,7 @@ These are the [CI regression tests](https://github.com/commaai/panda/actions) we
 * The [safety logic](https://github.com/commaai/panda/tree/master/board/safety) is tested and verified by [unit tests](https://github.com/commaai/panda/tree/master/tests/safety) for each supported car variant.
 to ensure that the behavior remains unchanged.
 * A hardware-in-the-loop test verifies panda's functionalities on all active panda variants, including:
-  * additional afety model checks
+  * additional safety model checks
   * compiling and flashing the bootstub and app code
   * receiving, sending, and forwarding CAN messages on all buses
   * CAN loopback and latency tests through USB and SPI
